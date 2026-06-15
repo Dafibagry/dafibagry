@@ -1,0 +1,283 @@
+```html
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DaFi Bagry | Výkopové práce a demolice</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#333;
+}
+
+header{
+background:#222;
+color:white;
+padding:20px;
+position:sticky;
+top:0;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:80vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+background:#f39c12;
+color:white;
+padding:15px 25px;
+text-decoration:none;
+border-radius:5px;
+margin-top:15px;
+font-weight:bold;
+}
+
+section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+margin-bottom:30px;
+text-align:center;
+color:#222;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#f4f4f4;
+padding:25px;
+border-radius:10px;
+}
+
+.contact{
+background:#222;
+color:white;
+}
+
+.contact h2{
+color:white;
+}
+
+form{
+display:grid;
+gap:15px;
+max-width:700px;
+margin:auto;
+}
+
+input, textarea, select{
+padding:12px;
+border:none;
+border-radius:5px;
+}
+
+button{
+background:#f39c12;
+color:white;
+padding:15px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:16px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.tel{
+color:#f39c12;
+font-weight:bold;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2rem;
+}
+nav{
+flex-direction:column;
+gap:10px;
+}
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>DaFi Bagry</h2>
+<ul>
+<li><a href="#sluzby">Služby</a></li>
+<li><a href="#technika">Technika</a></li>
+<li><a href="#kontakt">Kontakt</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Výkopové práce, demolice a zemní práce</h1>
+<p>Brno • Brno-venkov • okolí</p>
+<a href="tel:605325251" class="btn">📞 Zavolat nyní</a>
+</div>
+</section>
+
+<section id="sluzby">
+<h2>Naše služby</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Výkopové práce</h3>
+<p>Výkopy základů, bazénů, přípojek a inženýrských sítí.</p>
+</div>
+
+<div class="card">
+<h3>Demolice</h3>
+<p>Bourací práce, demolice objektů, odvoz suti a úklid.</p>
+</div>
+
+<div class="card">
+<h3>Terénní úpravy</h3>
+<p>Srovnání pozemků, příprava stavebních parcel a zahrad.</p>
+</div>
+
+<div class="card">
+<h3>Doprava materiálu</h3>
+<p>Dovoz a odvoz zeminy, štěrku, písku a stavebních materiálů.</p>
+</div>
+</div>
+</section>
+
+<section id="technika">
+<h2>Strojní vybavení</h2>
+
+<div class="grid">
+<div class="card">
+<h3>Pásový bagr 5 t</h3>
+<p>Ideální pro výkopy a zemní práce.</p>
+</div>
+
+<div class="card">
+<h3>Volvo EW160C</h3>
+<p>Kolový bagr s rotační hlavou.</p>
+</div>
+
+<div class="card">
+<h3>Příslušenství</h3>
+<p>Svahovací lžíce, podkopové lžíce 50 a 100 cm, smeták, paletizační vidle, řezací kolo na asfalt, ripper.</p>
+</div>
+
+<div class="card">
+<h3>Nákladní doprava</h3>
+<p>MAN 17 t a Tatra 6×6 14 t.</p>
+</div>
+</div>
+</section>
+
+<section class="contact" id="kontakt">
+<h2>Nezávazná poptávka</h2>
+
+<form action="https://formsubmit.co/dafibagry@outlook.cz" method="POST">
+
+<input type="text" name="Jméno" placeholder="Jméno a příjmení" required>
+
+<input type="tel" name="Telefon" placeholder="Telefon" required>
+
+<input type="email" name="Email" placeholder="E-mail">
+
+<input type="text" name="Místo zakázky" placeholder="Místo zakázky">
+
+<select name="Typ práce">
+<option>Výkopové práce</option>
+<option>Demolice</option>
+<option>Terénní úpravy</option>
+<option>Doprava materiálu</option>
+<option>Jiné</option>
+</select>
+
+<textarea name="Popis zakázky" rows="6" placeholder="Popište zakázku"></textarea>
+
+<button type="submit">Odeslat poptávku</button>
+
+</form>
+
+<br><br>
+
+<div style="text-align:center;">
+<p><strong>Filip Juřička</strong></p>
+<p>IČO: 03384063</p>
+<p>Unkovice 664 63</p>
+<p>Působnost: Brno a Brno-venkov</p>
+<p><a class="tel" href="tel:605325251">605 325 251</a></p>
+<p>dafibagry@outlook.cz</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 DaFi Bagry | Výkopové práce a demolice</p>
+</footer>
+
+</body>
+</html>
+```
